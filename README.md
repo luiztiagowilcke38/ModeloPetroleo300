@@ -1,7 +1,6 @@
 # Projeto de Previsão do Preço do Petróleo (2026-2040)
 
 **Autor:** Luiz Tiago Wilcke  
-**Data:** 02 de Fevereiro de 2026
 
 ## Descrição
 Este projeto utiliza técnicas avançadas de ciência de dados e modelagem estocástica para prever o comportamento do preço do barril de petróleo (Brent) para o horizonte de 2026 a 2040. O sistema integra dados reais, séries temporais, modelos lineares e equações diferenciais estocásticas.
