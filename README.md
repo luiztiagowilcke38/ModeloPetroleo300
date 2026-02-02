@@ -12,26 +12,44 @@ O modelo baseia-se em um ensemble de 40 módulos, com destaque para as seguintes
 
 ### 1. Movimento Browniano Geométrico (GBM)
 Utilizado para simular a trajetória estocástica principal dos preços:
-$$ dS_t = \mu S_t dt + \sigma S_t dW_t $$
+
+$$
+dS_t = \mu S_t dt + \sigma S_t dW_t
+$$
+
 Onde $S_t$ é o preço, $\mu$ o drift (tendência), $\sigma$ a volatilidade e $dW_t$ um processo de Wiener.
 
 ### 2. Processo de Reversão à Média (Ornstein-Uhlenbeck)
 Modela a tendência econômica de retorno ao custo marginal de produção no longo prazo:
-$$ dX_t = \theta (\mu - X_t) dt + \sigma dW_t $$
+
+$$
+dX_t = \theta (\mu - X_t) dt + \sigma dW_t
+$$
+
 Onde $\theta$ representa a velocidade de reversão à média $\mu$.
 
 ### 3. Jump Diffusion (Merton)
 Incorpora choques geopolíticos súbitos (guerras, sanções) através de um processo de Poisson:
-$$ \frac{dS_t}{S_{t-}} = (\mu - \lambda k) dt + \sigma dW_t + (Y - 1) dN_t $$
+
+$$
+\frac{dS_t}{S_{t-}} = (\mu - \lambda k) dt + \sigma dW_t + (Y - 1) dN_t
+$$
+
 Onde $dN_t$ é o processo de contagem de saltos e $Y$ a magnitude log-normal do salto.
 
 ### 4. Volatilidade Condicional (GARCH 1,1)
 Captura os aglomerados de volatilidade (volatility clustering) observados no mercado financeiro:
-$$ \sigma_t^2 = \omega + \alpha \epsilon_{t-1}^2 + \beta \sigma_{t-1}^2 $$
+
+$$
+\sigma_t^2 = \omega + \alpha \epsilon_{t-1}^2 + \beta \sigma_{t-1}^2
+$$
 
 ### 5. Regressão com Variáveis Exógenas
 O componente determinístico considera variáveis macroeconômicas e geopolíticas:
-$$ Y_t = \beta_0 + \beta_1 \text{Prod}_t + \beta_2 \text{Demanda}_t + \beta_3 \text{DXY}_t + \beta_4 \text{GPR}_t + \epsilon_t $$
+
+$$
+Y_t = \beta_0 + \beta_1 \text{Prod}_t + \beta_2 \text{Demanda}_t + \beta_3 \text{DXY}_t + \beta_4 \text{GPR}_t + \epsilon_t
+$$
 
 ## Estrutura do Projeto (40 Módulos)
 - **Coleta de Dados:** Integração automática com Yahoo Finance (Brent Crude).
