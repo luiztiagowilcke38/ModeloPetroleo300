@@ -1,0 +1,16 @@
+
+	Augmented Dickey-Fuller Test
+
+data:  ts_brent
+Dickey-Fuller = -2.4492, Lag order = 5, p-value = 0.3884
+alternative hypothesis: stationary
+
+
+--------------------------------
+
+
+	KPSS Test for Trend Stationarity
+
+data:  ts_brent
+KPSS Trend = 0.37989, Truncation lag parameter = 4, p-value = 0.01
+

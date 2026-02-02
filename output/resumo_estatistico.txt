@@ -1,0 +1,14 @@
+      Data             Preco_Brent       Indice_GPR      Dolar_Index    
+ Min.   :2007-07-31   Min.   : 26.63   Min.   : 53.58   Min.   : 87.32  
+ 1st Qu.:2014-01-14   1st Qu.: 60.75   1st Qu.: 86.06   1st Qu.: 92.34  
+ Median :2018-03-14   Median : 74.92   Median :101.80   Median : 94.31  
+ Mean   :2017-08-26   Mean   : 76.03   Mean   :114.92   Mean   : 94.26  
+ 3rd Qu.:2022-01-07   3rd Qu.: 89.33   3rd Qu.:118.99   3rd Qu.: 96.11  
+ Max.   :2025-12-30   Max.   :134.10   Max.   :482.78   Max.   :100.52  
+ Crescimento_PIB_Global Producao_Global  Demanda_Global   Indice_Renovaveis
+ Min.   :-1.742         Min.   : 59.67   Min.   : 59.67   Min.   : 2.450   
+ 1st Qu.: 1.885         1st Qu.: 69.68   1st Qu.: 69.84   1st Qu.: 9.463   
+ Median : 3.036         Median : 80.17   Median : 80.15   Median :16.200   
+ Mean   : 2.976         Mean   : 79.94   Mean   : 79.95   Mean   :16.007   
+ 3rd Qu.: 4.171         3rd Qu.: 90.06   3rd Qu.: 90.04   3rd Qu.:22.587   
+ Max.   : 6.750         Max.   :100.55   Max.   :101.45   Max.   :31.250   
